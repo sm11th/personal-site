@@ -8,7 +8,24 @@ body {
   color: white;
   background-color: black;
 }
+
 h1, h2, h3 {
   font-family: Georgia, serif;
   font-weight: bold;
+}
+
+a:link {
+  color: lavender;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: lightcoral;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
