@@ -14,9 +14,24 @@ h1, h2, h3 {
   font-weight: bold;
 }
 
-.secret-poem {              
+a.secret-poem:link {              
   color: black;
   position: absolute;
+  text-decoration: none;
+  bottom: 0;
+}
+
+a.secret-poem:visited { 
+  color: black;
+  position: absolute;
+  text-decoration: none;
+  bottom: 0;
+}
+
+a.secret-poem:hover { 
+  color: black;
+  position: absolute;
+  text-decoration: none;
   bottom: 0;
 }
 
