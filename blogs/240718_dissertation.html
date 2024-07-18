@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> An Explainable Machine Learning Methodology For Detecting Novel Network Attacks| Carrie 
+Smith</title>
+<meta name="keywords" content="Dissertation, Undergraduate Dissertation, Cybersecurity, Machine Learning, 
+Carrie Smith, Fabio Pierazzi, SHAP, King’s College London">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a href="https://www.carriesmith.dev">Home</a>
+&nbsp;
+<a href="blogs">Blogs</a>
+<hr>
+<h2>My Undergraduate Dissertation: An Explainable Machine Learning Methodology For Detecting Novel Network 
+Attacks</h2>
+<p>Posted <time datetime="2024-07-18">18 July, 2024</time></p>
+
+<p>
+<a href="files/240718_dissertation.pdf">Here is the link</a> to my undergraduate dissertation, which I 
+wrote from December 2023 to 
+April 2024. This report is the culmination of seven months of research, programming and writing, and I am 
+pretty proud of it. My endlessly patient and supportive supervisor was Fabio 
+Pierazzi. If you are a computer science student at King’s, I strongly recommend him as a dissertation 
+supervisor and a lecturer. For my report, I received an 80%, which is a First Class Honours mark in the 
+United Kingdom.
+</p>
+
+<p>
+To sum up my project, I created a new method for building machine learning models to be specifically used 
+for detecting attacks on a computer network. The main area where my method differed from other previous 
+designs is that I focused heavily on improving explainability – how easy it is to figure out why a machine 
+learning model classified a particular flow of network traffic as either malicious or benign – and the 
+machine learning model’s ability to detect network attacks which it had not seen before. These two 
+concentrations, explainability and detection of novel attacks, were chosen because they are both extremely 
+necessary for the commercial viability of any network intrusion detection model that relies on machine 
+learning. If an intrusion detection system can’t adapt to hackers innovating new attacks, it will quickly 
+become useless; if an operator can’t figure out why their tool classified traffic as malicious or benign, 
+how can they trust it?
+
+</p>
+
+<p>
+I then implemented my new design in Python to determine its viability. On the explainability front, I 
+succeeded, but my model failed to detect reconnaissance attacks (specifically port scanning and FTP/SSH 
+brute forcing attacks) when it had not seen them previously. I believe that my model failed to detect 
+novel attacks because my classification algorithm was too simple, reconnaissance attacks present extremely 
+similarly to regular network traffic, and my dataset wasn’t high enough quality (there’s a lack of quality 
+datasets that can be used to train machine learning models to detect network attacks).
+</p>
+
+<p>
+The main third-party tools that I used for my implementation were the Apache Pyspark API, which increased 
+the efficiency of training and testing my machine learning models by a significant degree, and the SHAP 
+library, which uses game theory (Shapley values) to explain how much different attributes of a network 
+flow contribute to my machine learning model classifying the flow as an attack or as normal traffic. I 
+think that given a more complex classification algorithm and more real-world data, my methodology could 
+still be successful as a basis for building high-performance, explainable network intrusion detection 
+systems.
+</p>
+
+<p>
+If you have any questions, comments or feedback, I am eager to hear it all! Email me at ccarrieasmith at 
+gmail dot com :)
+</p>
+
+</body>
+</html>
