@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>(Part 2) Defining the Hacker | Carrie Smith</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="Carrie Smith, hacking, ethical hacking, HKUST, cyberattacks, Cybersecurity, Security Hobbyist, Hong Kong">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a href="https://www.carriesmith.dev">Home</a>
+&nbsp;
+<a href="blogs">Blogs</a>
+<hr>
+<h2>Defining the Hacker, Part 2</h2>
+<p>Posted <time datetime="2025-03-27">27 March, 2025</time></p>
+
+<p>
+I'm back for another part of Defining the Hacker! This part focuses on financially-motivated hackers. I was originally planning to also include
+ chaos-/power-motivated hackers, but there's too much interesting stuff on financial hacks for me to fit everything into one part. The next part will
+ talk more about the relationships and overlaps between Type 2 and Type 3 hackers :)
+</p>
+
+<h4>In The Beginning... There Was The Union Dime Savings Bank</h4>
+<p>Financially-motivated hackers are nothing new. I suspect that as long as there have been hackers motivated by benign curiosity,
+ there have been those who are looking to profit off of that curiosity. In any case, there are many ways that you can profit
+ through hacking. One of the oldest approaches is traditional computer theft -- the fraudulent use of computers to steal money or other financial assets
+ that you should not be authorised to access. The earliest example I could find of this was in 1970, when Roswell Steffen,
+ the chief teller at the Union Dime Savings Bank, began his three-year embezzlement of US$1.5 million
+ (equivalent to around $10.7 million in 2025) using a computer. Given
+ <a href="https://www.nytimes.com/1973/03/23/archives/chief-teller-is-accused-of-theft-of-15million-at-a-bank-here-teller.html" target="__blank">
+the vague language used by the media to describe his hacking method</a>, such as that he mainly executed the hack by using a computer to 'shuffle
+ numbers', it may be impossible for us to determine how he specifically carried out this crime -- Justin Caffier from Mashable
+ <a href="https://mashable.com/article/first-cybercriminal-rosnell-steffen-scammed">even posits</a> that Steffen may not have even
+ touched a computer during his crime.
+</p>
+
+<p>For his part, in a 1974 article entitled
+ <a href="http://archive.informationdisplay.org/Portals/InformationDisplay/IssuePDF/V11N05-1974%20SepOctSmall.pdf" target="__blank">
+"How I Embezzled $1.5 Million... and Nearly Got Away With It!"</a>, Steffen claimed that he simply skimmed from
+ different accounts and moved funds to hide the discrepancies at convenient times, such
+ as when quarterly interest payments were due. No programming necessary --
+ in fact, he wrote that "programmers should be the bank's least worry" -- just a case of an internal threat who
+ knew when to blame suspicious data inconsistencies on a computer bug. Needless to say, financial cyber crimes
+ have become significantly more sophisticated today.
+</p>
+<h4>And God Said, "Let There Be Ransomware."</h4>
+<p>
+So what do financial hacks look like in 2025? To begin with, their perpetrators likely have
+ more programming knowledge than Roswell Steffen ever did. But their method for
+ profit also differs considerably -- instead of engaging in fraud or financial
+ asset theft, these hackers deal in data theft and extortion. I believe this
+ is both because it is now the norm to store all or most of your data digitally/online/in the cloud, and
+ because the value and total quantity of data have increased exponentially. Data has become currency,
+ thus the potential profit of stealing and reselling data can be many times that of the value of the
+ data itself. In fact, withholding stolen data from its original owner and demanding payment
+ for its return has become extremely lucrative; this forms the basis of modern-day ransomware.
+</p>
+
+<p>
+Holding data ransom is a simple concept: you gain access to a target's data, you (optionally) exfiltrate your own copy of the data,
+ you encrypt the target's copy so that they can't access anything without a key that you conveniently
+ now hold, and you demand money in exchange for the key. Ransomware specifically refers to the malware
+ that withholds your target's data; it elegantly circumvents the issues that other methods of financial hacking often encounter. Although
+ encryption is not mandatory for a malware to be classified as 'ransomware', it has
+ <a href="https://www.cybersecuritydive.com/news/ransomware-data-encryption-increase/649914/" target="__blank">become ransomware's calling card</a>.
+</p>
+
+<p>
+ Take<a href="https://www.bbc.com/news/uk-wales-48120428" target="__blank">
+ Daniel Kelley's hack</a> of the British telecom provider TalkTalk in 2015. Solely using SQL injection, Kelley and a group of other hackers
+ were able to uncover the financial information of <a href="https://www.bbc.com/news/business-48351900" target="__blank">nearly 157,000</a>
+ TalkTalk customers. But if you're
+ Kelley (or any other hacker seeking profit), there are two major obstacles that you need to confront.
+ Firstly, according to TalkTalk,
+ the method that they used to store their financial data meant that the hack wasn't comprehensive enough to make fraudulent transactions using
+ customer data. And secondly, even if he had obtained enough of that data to do so, these customers' banks
+ and credit card companies could potentially notice any unusual activity, adding intermediaries and another layer of risk to the
+ whole operation. So through more 'traditional computer theft' methods, you simply wouldn't have enough anonymity to profit safely.
+</p>
+
+<p>
+Kelley and his co-conspirators' solution (in the TalkTalk case
+ <a href="https://cybersecurityventures.com/life-after-cybercrime-one-day-at-a-time/" target="__blank">as well as other hacks</a>) was to blackmail
+ company bosses in exchange for Bitcoin, since obviously the unauthorised access or sale of customers' personally identifiable information (PII)
+ <a href="https://www.infosecurity-magazine.com/news/discordio-halts-operations-data/" target="__blank">can be ruinous for a company</a>.
+ Blackmail circumvents the issue of needing complete financial data/interacting with financial intermediaries,
+ since you're only accessing the data in order to profit from blackmail payments; therefore, you can also maintain more anonymity compared
+ to some traditional computer theft methods.
+ What hackers have realised, though, is that the process could be optimised even further. Ransomware has all the benefits of blackmail and more: since
+ you cause more disruption by holding data hostage, you are providing an additional incentive for your victim to pay you beyond the fear of reputational
+ damages. Not only is the probability of payment likely greater, but your victim might even pay you more quickly if the withheld data is integral
+ to continuing business operations.
+</p>
+
+<p>
+(Note: although <a href="https://www.tripwire.com/state-of-security/the-talktalk-breach-timeline-of-a-hack" target="__blank"> many articles reference
+ 'ransom payments'</a> being demanded by the TalkTalk hackers, the purpose of payment was to prevent the release of PII to the public -- there
+ was no use of actual ransomware in the attack.)
+</p>
+
+<p>
+Because of the value of PII, larger organisations who store PII (e.g. healthcare organisations) are most likely to be reported on by the media
+ when they experience a ransomware attack.
+</p>
+
+<h4>Ransomware as a Service</h4>
+
+<p>
+In the past few years, even more opportunities have opened up for profiting from ransomware.
+RaaS?
+</p>
+
+<h4>So What's Next for Financial Hackers?</h4>
+<p>
+One thing to note is that the average business response to ransomware attacks has changed: according to <a href="https://www.statista.com/statistics/
+1409448/ransom-payment-rates-us-organizations/" target="__blank">Statista</a>, the share of ransomware attacks which result in ransom payment has
+ declined from 85% (Q1 2019) to 32% (Q3 2024), revealing that ransomware attacks are no longer the safe bet that they previously were. After a major
+ spike in the second and third quarters of 2023, <a href="https://www.statista.com/statistics/1409510/ransom-payment-us-quarterly-amount/"
+ target="__blank">the average ransomware payout has also declined</a>. I believe that this is mostly due to a significant government response:
+ both the EU and the US have released guidance strongly advising businesses not to pay (in New York you are now even required to notify the government
+ of an extortion payment along with extensive justification and diligence proving that such a payment was necessary); at the same time
+ that recommendations and legislation have been amended, <a href="">governments have cracked down on ransomware gangs</a> such as
+ <a href="">LockBit</a> and <a href="">BlackCat/ALPHV</a>. While this has overall been positive, new collectives offering RaaS (such as RansomHub)
+ are gaining prominence. Thus, as long as certain governments (hint: Russia and North Korea) are willing to overlook the criminal hackers within their
+ borders, I think we'll continue to see new gangs and collectives popping up to profit from this type of financial hack.
+</p>
+
+<p>
+At the same time, there are always new methods for profitable hacking. As cryptocurrencies gain more acceptance as a legitimate asset, attackers
+ have exploited bugs in smart contracts and crypto exchanges to steal hundreds of millions or even billions of US dollars' worth in crypto.
+ Last month, the cryptocurrency exchange ByBit was the victim of a <i>1.5 billion dollar theft</i> from one of its 'more secure' Ether wallets; the
+ theft <a href="https://www.csis.org/analysis/bybit-heist-and-future-us-crypto-regulation" target="__blank">has now been attributed</a> to hackers
+ belonging to North Korea's state-sanctioned Lazarus Group. While it would be an understatement to say that the value of Bitcoin and other
+ cryptocurrencies has been volatile lately, as long as crypto continues its uphill rise in the public eye, I predict that we will see more and more
+ of these enormous crypto heists.
+</p>
+
+<h4>Notable Actors and Incidents</h4>
+<li></li>
+
+<h4>A Brief Note About Daniel Kelley</h4>
+
+<p>
+I'd like to end the article by adding that Daniel Kelley is now a reformed white-hat hacker who has done a lot to improve the security of many companies,
+ and he has done a lot of great things for cybersecurity awareness since his release from prison in 2021. I have mentioned him as an example not
+ because I want to invite further criticism upon him, but because his story is a clear example of how even 'curious hackers' can quickly go down
+ the pipeline of becoming 'power-seeking hackers' and subsequently 'profit-seeking hackers'.
+</p>
+
+</body>
+</html>
